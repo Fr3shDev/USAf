@@ -1,0 +1,17 @@
+{
+    "name": "b-fresh/cms",
+    "autoload": {
+        "psr-4": {
+            "BFresh\\Cms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Weno-Hans",
+            "email": "billyhans90@gmail.com"
+        }
+    ],
+    "require": {
+        "pusher/pusher-php-server": "^7.0"
+    }
+}
