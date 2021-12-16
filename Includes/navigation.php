@@ -66,13 +66,13 @@
 
 
                     
-                   
-                    <li class='<?php echo $registration_class; ?>'>
-                        <a href="/My Workspace/USAf/registration">Registration</a>
-                    </li>
-                    <li>
+                <li>
                         <a href="/My Workspace/USAf/contact">Contact</a>
                     </li>
+                    <li class='<?php echo $registration_class; ?>'>
+                        <a href="/My Workspace/USAf/">Registration</a>
+                    </li>
+                    
 
                     <?php
                     //Restarting the sessions
