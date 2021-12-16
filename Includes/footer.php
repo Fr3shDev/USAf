@@ -13,10 +13,10 @@
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="/My Workspace/CMS/js/jquery.js"></script>
+    <script src="/My Workspace/USAf/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/My Workspace/CMS/js/bootstrap.min.js"></script>
+    <script src="/My Workspace/USAf/js/bootstrap.min.js"></script>
 
 </body>
 

@@ -100,7 +100,7 @@ if(isset($_POST['checkBoxArray'])) {
 
     <?php
 
-    $user = currentUser();
+        $user = currentUser();
 
         // $query = "SELECT * FROM posts ORDER BY post_id DESC"; 
 
@@ -226,7 +226,7 @@ if(isset($_POST['delete'])) {
     $query = "DELETE FROM posts WHERE post_id = {$the_post_id} ";
     $delete_query = mysqli_query($connection, $query);
 
-    header("Location: /My Workspace/CMS/admin/posts.php");
+    header("Location: /My Workspace/USAf/admin/posts.php");
 
 }
 
