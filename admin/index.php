@@ -21,7 +21,7 @@
 
         <div id="page-wrapper">
 
-            <div class="bg-primary container-fluid">
+            <div class="container-fluid">
 
                 <!-- Page Heading -->
                 <div class="row">
