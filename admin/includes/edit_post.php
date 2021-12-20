@@ -66,7 +66,7 @@ $query = "SELECT * FROM posts WHERE post_id = $the_post_id ";
 <form action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <label for="title">Post Title</label>
-        <input value="<?php echo $post_title;?>" type="text" class="form-control" name="title"> 
+        <input value="<?php echo $post_title; ?>" type="text" class="form-control" name="post_title"> 
     </div>
 
     <div class="form-group">
@@ -96,8 +96,8 @@ while ($row = mysqli_fetch_assoc($select_categories)) {
     </div>
 
     <div class="form-group">
-        <label for="title">Post Author</label>
-        <input value="<?php echo $post_author;?>" type="text" class="form-control" name="author">
+        <label for="author">Post Author</label>
+        <input value="<?php echo $post_author;?>" type="text" class="form-control" name="post_author">
     </div>
 
     <div class="form-group">
