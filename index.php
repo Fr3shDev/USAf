@@ -30,7 +30,7 @@
 
                 if ($post_status !== 'published') {
 
-                    echo "<h1 class='text-center'>NO POSTS AVAILABLE</h1>";
+                    // echo "<h1 class='text-center'>NO POSTS AVAILABLE</h1>";
                 } else {
 
 

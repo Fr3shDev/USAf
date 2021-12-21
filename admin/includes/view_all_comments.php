@@ -62,13 +62,9 @@
                                         $post_id = $row['post_id'];
                                         $post_title = $row['post_title'];
 
-                                        echo "<td><a href='../post.php?p_id=$post_id'>$post_title</a></td>";
+                                        echo "<td><a href='../post.php?p_id=$post_id'>{$post_title}</a></td>";
                                     }
-
                                 
-
-
-
                                 echo "<td>{$comment_date}</td>";
 
                                 echo "<td><a href='comments.php?approved=$comment_id'>Approve</a></td>";
