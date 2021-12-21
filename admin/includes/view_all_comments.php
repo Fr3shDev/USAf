@@ -1,17 +1,3 @@
-<?php
-
-                    if(isset($_GET['delete'])) {
-                        $the_post_id = $_GET['delete'];
-
-                        $query = "DELETE FROM posts WHERE post_id={$the_post_id} ";
-                        $delete_query = mysqli_query($connection, $query);
-                    }
-
-                    ?>
-
-
-
-
 <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
@@ -89,7 +75,7 @@
                                 echo "<td><a href='posts.php?delete='>Unapprove</a></td>";
                                 
                                 
-                                echo "<td><a href='posts.php?delete='>Delete</a></td>";
+                                echo "<td><a href='comments.php?delete=$comment_id'>Delete</a></td>";
                                 echo "</tr>";
                             }
 
@@ -101,5 +87,22 @@
                         </tbody>
 
                     </table>
+
+                    <?php
+
+                    if(isset($_GET['delete'])) {
+                        $the_comment_id = $_GET['delete'];
+
+                        $query = "DELETE FROM comments WHERE comment_id={$the_comment_id} ";
+                        $delete_query = mysqli_query($connection, $query);
+
+                        header("Location:comments.php");
+                    }
+
+                    ?>
+
+
+
+
 
                     
