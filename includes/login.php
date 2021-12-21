@@ -1,4 +1,5 @@
 <?php include "db.php"; ?>
+<?php session_start();?>
 
 <?php
 
@@ -18,6 +19,7 @@ if(isset($_POST['login'])) {
 
     while($row = mysqli_fetch_array($select_user_query)) {
         $db_user_id = $row['user_id'];
+        $db_name = $row['name'];
         $db_username = $row['username'];
         $db_user_password = $row['user_password'];
         $db_user_role = $row['user_role'];
@@ -26,6 +28,11 @@ if(isset($_POST['login'])) {
     if($username !== $db_username && $password !== $db_user_password) {
         header("Location: ../index.php");
     } else if($username == $db_username && $password == $db_user_password) {
+
+        $_SESSION['username'] = $db_username;
+        $_SESSION['name'] = $db_name;
+        $_SESSION['user_role'] = $db_user_role;
+
         header("Location: ../admin");
     } else {
         header("Location: ../index.php");
