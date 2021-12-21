@@ -25,16 +25,16 @@ if(isset($_POST['login'])) {
         $db_user_role = $row['user_role'];
     }
 
-    if($username !== $db_username && $password !== $db_user_password) {
-        header("Location: ../index.php");
-    } else if($username == $db_username && $password == $db_user_password) {
+    if($username === $db_username && $password === $db_user_password) {
 
         $_SESSION['username'] = $db_username;
         $_SESSION['name'] = $db_name;
         $_SESSION['user_role'] = $db_user_role;
 
         header("Location: ../admin");
-    } else {
+
+        
+    }  else {
         header("Location: ../index.php");
     }
 }
