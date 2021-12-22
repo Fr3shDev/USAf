@@ -28,7 +28,7 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">
                         Welcome to Admin
-                        <small>Author</small>
+                        <small><?php echo $_SESSION['name']; ?></small>
                     </h1>
 
                     <!-- <div class="col-xs-12 col-sm-6"> -->

@@ -24,6 +24,7 @@
                                 <th>Tags</th>
                                 <th>Comments</th>
                                 <th>Date</th>
+                                <th>View Post</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
                             </tr>
@@ -32,7 +33,7 @@
 
                             <?php
 
-                            $query = "SELECT * FROM posts";
+                            $query = "SELECT * FROM posts ORDER by post_id DESC";
                             $select_posts = mysqli_query($connection, $query);
 
                             while ($row = mysqli_fetch_assoc($select_posts)) {
@@ -73,6 +74,7 @@
                                 echo "<td>{$post_tags}</td>";
                                 echo "<td>{$post_comment_count}</td>";
                                 echo "<td>{$post_date}</td>";
+                                echo "<td><a href='../post.php?p_id={$post_id}'>View Post</a></td>";
                                 echo "<td><a href='posts.php?source=edit_post&p_id={$post_id}'>Edit</a></td>";
                                 echo "<td><a href='posts.php?delete={$post_id}'>Delete</a></td>";
                                 echo "</tr>";
