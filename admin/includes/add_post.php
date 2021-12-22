@@ -28,7 +28,8 @@ if(isset($_POST['create_post'])) {
     confirmQuery($create_post_query); 
 
     //echo "Post created Successfully: " . " " . "<a href='view_all_posts.php'>View Posts</a>";
-    echo "<p class = 'bg-success'>Post Created: " . " " . "<a href='posts.php?source=add_post'>Add More Posts</a></p>";
+    //echo "<p class = 'bg-success'>Post Created: " . " " . "<a href='../post.php?p_id={$the_post_id}'></a>View Posts<a href='posts.php?source=add_post'>Add More Posts</a></p>";
+    echo "<p class = 'bg-success'>Post Updated: " . " " . "<a href='posts.php'>View All Posts</a></p>";
 
 }
 
