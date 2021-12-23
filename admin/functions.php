@@ -8,6 +8,8 @@ function confirmQuery($result) {
     
 }
 
+
+
 function insert_categories()
 {
     global $connection;
