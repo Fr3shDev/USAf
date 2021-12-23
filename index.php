@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <?php include "includes/db.php" ?>
 <?php include "includes/header.php" ?>
 
@@ -59,10 +60,10 @@
 
 
 
-                    <h1 class="page-header">
+                    <!-- <h1 class="page-header">
                         Page Heading
                         <small>Secondary Text</small>
-                    </h1>
+                    </h1> -->
 
                     <!-- First Blog Post -->
                     
