@@ -23,7 +23,7 @@ if(!isset($_SESSION['user_role'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>USAf Admin</title>
+    <title>BLOG Admin</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
